@@ -10,7 +10,6 @@ body {
 .nav li {
   padding-top: 10px;
   font-size: 1.1em;
-
   @media screen and(max-width: 767px) {
     font-size: 1.7em;
   }
@@ -24,7 +23,7 @@ body {
   }
 }
 
-.aboutUs {
+.mainHeader {
   margin: 80px 0 40px 0;
 }
 
@@ -167,14 +166,48 @@ p {
 
 .footer {
   background-color: #D6D0D0;
-  min-height: 130px;
   margin: 0;
   padding: 0;
+
+  h6 {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .address {
     padding-top: 30px;
     text-align: center;
     p {
       color: $mdgrey;
+      margin: 0px;
+      padding: 0px;
     }
   }
+}
+
+.contactForm {
+
+  min-height: 800px;
+
+  @media screen and(max-width: 989px) {
+    padding-top: 60px;
+    background-image: url(/images/NatureBackground2small.jpg);
+      background-size:cover;
+  }
+
+  @media screen and(min-width: 990px) {
+    padding-top: 60px;
+    background-image: url(/images/NatureBackground2.jpg);
+      background-size:cover;
+  }
+
+  .foxyform {
+	padding-top: 80px;
+
+    @media screen and (max-width: 980px) {
+      padding-top: 10px;
+      padding-left: 28px;
+    }
+}
+
 }
