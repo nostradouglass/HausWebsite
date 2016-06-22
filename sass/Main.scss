@@ -1,0 +1,113 @@
+$mdGreen: #8FC33F;
+$mdgrey: #77777A;
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  a:link {
+    text-decoration: none;
+  }
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+.hero {
+  .WelcomeHaus {
+    font-weight: 300;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    font-size: 3.6em;
+    color: white;
+    @media screen and (max-width: 660px) {
+      font-size: 2.3em;
+    }
+  }
+  .lowerWelcome {
+    position: absolute;
+    margin-right: 70px;
+    top: 70%;
+    left: 60%;
+    @media screen and (max-width: 1200px) {
+      top: 50%;
+      left: 50%;
+    }
+    @media screen and (max-width: 840px) {
+      top: 40%;
+      left: 40%;
+    }
+    @media screen and (max-width: 660px) {
+      font-size: .75em;
+      top: 30%;
+      left: 26%;
+      margin-right: 35px;
+    }
+    h2 {
+      text-align: right;
+      font-size: 1.5em;
+      color: white;
+    }
+    h4 {
+      text-align: right;
+      font-size: 1.1em;
+      color: white;
+    }
+    a:link {
+      color: white;
+    }
+    a:visited {
+      color: white;
+    }
+  }
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+//MetaDerm Logo
+.squareLogo {
+  margin: auto;
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: $mdGreen;
+  margin-top: 30px;
+  margin-bottom: 66px;
+  // Metaderm logo "M"
+  .md-M {
+    position: relative;
+    h3 {
+      font-size: 2.5em;
+      color: white;
+      text-align: right;
+      margin-right: 9px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.threeIcons {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h3 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.singleIcon {
+  padding: 40px;
+  img {
+    margin: auto;
+    display: block;
+  }
+  h3 {
+    text-align: center;
+    color: $mdgrey;
+  }
+  p {
+    text-align: center;
+    color: $mdgrey;
+  }
+}

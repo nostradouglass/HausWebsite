@@ -18,7 +18,7 @@ all plugins will need plugins prefix to use. ex. plugins.gulp-uglify*/
 //sets up server for use with livereload
 gulp.task('connect', function () {
   connect.server({
-    root: './dist', //(needed if in a different folder then gulpfile.js)
+    root: './', //(needed if in a different folder then gulpfile.js)
     livereload: true
   });
 })
@@ -60,7 +60,7 @@ gulp.task('scripts', function () {
 //Styles Task
 //compiles sass, removes unused styles, minifies css and saves to new file
 gulp.task('styles', function () {
-  gulp.src('sass/**/*.scss') //set source folder
+  gulp.src('sass/*.scss') //set source folder
     .pipe(plumber())
     .pipe(sass())
     .pipe(uncss({
