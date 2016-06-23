@@ -18,7 +18,7 @@ all plugins will need plugins prefix to use. ex. plugins.gulp-uglify*/
 //sets up server for use with livereload
 gulp.task('connect', function () {
   connect.server({
-    root: './', //(needed if in a different folder then gulpfile.js)
+    root: './dist', //(needed if in a different folder then gulpfile.js)
     livereload: true
   });
 })
@@ -45,16 +45,16 @@ gulp.task('scripts', function () {
 
 //Bootstrap 
 //remove unused styles
-/*gulp.task('bootstrap', function() {
+gulp.task('bootstrap', function() {
   gulp.src('bower_components/bootstrap/dist/css/*.css')
     .pipe(plumber())
     .pipe(uncss({
       html: ['./dist/*.html']
     }))
   .pipe(cssnano())
-  .pipe(gulp.dest('./dist/css/'))
+  .pipe(gulp.dest('./dist/styles/'))
   .pipe(connect.reload());
-})*/
+})
 
 
 //Styles Task

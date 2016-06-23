@@ -1,0 +1,47 @@
+$mdGreen: #8FC33F;
+$mdgrey: #77777A;
+$bgGrey: #D6D0D0;
+.contactForm {
+  min-height: 800px;
+  @media screen and(max-width: 989px) {
+    padding-top: 60px;
+    background-image: url(/images/rocks.jpeg);
+    background-size: cover;
+  }
+  @media screen and(min-width: 990px) {
+    padding-top: 60px;
+    background-image: url(/images/waterfall.jpg);
+    background-size: cover;
+  }
+  .foxyform {
+    padding-top: 80px;
+    @media screen and (max-width: 980px) {
+      padding-top: 10px;
+      padding-left: 28px;
+    }
+  }
+}
+
+.founders {
+  margin-bottom: 100px;
+  img {
+    width: 80%;
+    margin-top: 22px;
+  }
+}
+
+.greyBar {
+  height: 20px;
+  background-color: $bgGrey;
+
+}
+
+.hoursOfOperation {
+	background-color: white;
+  width: 347px;
+  height: 474px;
+  margin: 80px 0px;
+  margin-left: 29px;
+  text-align: center;
+  font-size: 1.1em;
+}

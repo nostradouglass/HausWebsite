@@ -1,0 +1,136 @@
+$mdGreen: #8FC33F;
+$mdgrey: #77777A;
+$bgGrey: #D6D0D0;
+.hero img {
+  max-width: 100%;
+}
+
+.tint {
+
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(100,100,100, 0.1);
+
+}
+
+.hero {
+
+  position: relative;
+  .WelcomeHaus {
+    font-weight: 300;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    font-size: 3.6em;
+    color: white;
+    @media screen and (max-width: 1000px) {
+      font-size: 3em;
+      top: 20px;
+      left: 30px;
+    }
+    @media screen and (max-width: 720px) {
+      font-size: 1.2em;
+      top: -12px;
+      left: 20px;
+    }
+  }
+  .lowerWelcome {
+    position: absolute;
+    margin-right: 80px;
+    top: 55%;
+    left: 59%;
+
+    @media screen and (max-width: 1200px) {
+      top: 50%;
+      left: 50%;
+    }
+    @media screen and (max-width: 660px) {
+      font-size: .7em;
+      top: 50%;
+      left: 26%;
+      margin-right: 35px;
+    }
+    h2 {
+      text-align: right;
+      font-size: 1.5em;
+      color: white;
+    }
+    h4 {
+      text-align: right;
+      font-size: 1.1em;
+      color: white;
+    }
+    a:link {
+      color: white;
+    }
+    a:visited {
+      color: white;
+    }
+  }
+
+
+}
+
+.squareLogo {
+  margin: auto;
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-color: $mdGreen;
+  margin-top: 36px;
+  margin-bottom: 60px;
+  // Metaderm logo "M"
+  .md-M {
+    position: relative;
+    h3 {
+      font-size: 2.5em;
+      color: white;
+      text-align: right;
+      margin-right: 9px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.threeIcons {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h3 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+
+  }
+
+  .nature img{
+	margin-bottom: 25px;
+
+}
+
+    .science {
+      margin-top: 7px;
+}
+}
+
+.singleIcon {
+  padding: 40px;
+  img {
+    margin: auto;
+    display: block;
+  }
+  h3 {
+    text-align: center;
+    color: $mdgrey;
+  }
+  p {
+    text-align: center;
+    color: $mdgrey;
+    @media screen and(max-width: 991px) {
+      margin: 0 17%;
+    }
+  }
+}
