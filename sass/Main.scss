@@ -24,7 +24,7 @@ body {
 }
 
 .mainHeader {
-  margin: 80px 0 40px 0;
+  margin: 40px 0 20px 0;
 }
 
 h1, h2, h3, p {
@@ -62,7 +62,8 @@ h1, h2, h3, p {
     padding: 0px;
   }
   .address {
-    padding-top: 25px;
+    padding-top: 18px;
+    padding-bottom: 8px;
     text-align: center;
     p {
       color: $mdgrey;
@@ -71,3 +72,9 @@ h1, h2, h3, p {
     }
   }
 }
+
+address {
+  margin-bottom: 7px;
+  padding: 0;
+}
+

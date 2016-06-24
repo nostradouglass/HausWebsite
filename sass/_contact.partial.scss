@@ -2,10 +2,10 @@ $mdGreen: #8FC33F;
 $mdgrey: #77777A;
 $bgGrey: #D6D0D0;
 .contactForm {
-  min-height: 800px;
+
   @media screen and(max-width: 989px) {
     padding-top: 60px;
-    background-image: url(/images/rocks.jpeg);
+    background-image: url(/images/waterfall.jpg);
     background-size: cover;
   }
   @media screen and(min-width: 990px) {

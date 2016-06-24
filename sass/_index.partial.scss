@@ -70,10 +70,18 @@ $bgGrey: #D6D0D0;
     a:visited {
       color: white;
     }
+    a:hover {
+      color: $mdgrey;
+    }
   }
 
 
 }
+
+.outersquare {
+	height: 150px;
+}
+
 
 .squareLogo {
   margin: auto;
@@ -81,8 +89,8 @@ $bgGrey: #D6D0D0;
   width: 150px;
   height: 150px;
   background-color: $mdGreen;
-  margin-top: 36px;
-  margin-bottom: 60px;
+  margin-top: 50px;
+
   // Metaderm logo "M"
   .md-M {
     position: relative;
@@ -96,19 +104,20 @@ $bgGrey: #D6D0D0;
   }
 }
 
+#metadermDescription {
+	margin-top: 48px;
+}
+
 .threeIcons {
   padding-top: 40px;
   padding-bottom: 40px;
   h3 {
     padding-top: 10px;
     margin-bottom: 20px;
-
-
   }
 
   .nature img{
-	margin-bottom: 25px;
-
+	padding-bottom: 2px;
 }
 
     .science {

@@ -6,16 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
+  <meta name="description" content="We develop natural medicines using an evidence based approach">
+  <meta name="author" content="Kelly Douglass">
   <link rel="icon" href="/images/HausFavicon.ico">
 
   <title>Haus Bioceuticals</title>
   <!-- Bootstrap core CSS -->
-  <link href="./styles/bootstrap.min.css" rel="stylesheet">
+  <!--<link href="./styles/bootstrap.min.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <!-- Bootstrap theme -->
-  <link href="./styles/bootstrap-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <!-- Custom styles for this template -->
   <link href="./styles/Main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -36,14 +40,14 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/index.html">
-          <div class="upperLogo"><img src="./images/HausLogo.svg"></div>
+          <div class="upperLogo"><img src="./images/HausLogo.svg" alt="Haus Logo"></div>
         </a>
       </div>
       <div id="navbar" class="navbar-collapse collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li><a href="/about-us.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="http://metaderm.com" target="_blank">Metaderm.com</a></li>
+          <li><a id="navAbout" href="/about-us.html">About</a></li>
+          <li><a id="navContact" href="/contact.html">Contact</a></li>
+          <li><a id="navMetaDerm" href="http://metaderm.com" target="_blank">Metaderm.com</a></li>
         </ul>
       </div>
 
@@ -57,50 +61,61 @@
     <div class="lowerWelcome">
       <h2>We develop natural medicines using an
 evidence based approach</h2>
-      <h4><a href="/#">Learn more...</a></h4>
+      <h4><a href="/about-us.html">Learn more...</a></h4>
     </div>
-    <img src="images/NatureHillsHero.jpg">
+    <img src="images/NatureHillsHero.jpg" alt="Rolling Hills Background">
   </div>
   <div class="container threeIcons">
     <div class="row">
       <div class="col-md-4 singleIcon nature">
-        <img src="/images/Nature.png">
+        <img id="nature" src="/images/Nature.png" alt="Leaves Icon">
         <h3>Nature</h3>
-        <p>For thousands of years, natural medicine has given us all kinds of remedies that people swear by. They can work great, but most of the time, no one knows exactly why.</p>
+        <p>For thousands of years, natural medicine has given us all kinds of remedies that people swear by. They can work great, but most of the time, no one knows exactly why. We study the why.</p>
       </div>
       <div class="col-md-4 singleIcon science">
-        <img src="/images/Science.png">
-        <h3>Science</h3>
-        <p>With years of scientific research and into the real world to help real people with skin conditions.</p>
+        <a href="http://metaderm.com/pages/proven-by-science" target="_blank">
+        <img id="science" src="/images/Science.png" alt="Beaker Icon">
+        <h3>Science</h3></a>
+        <p>With years of scientific research experience, we decided to take our knowledge into the real world to help real people with skin conditions. So we rallied together a community of scientists, doctors and botanists to develop and clinically test botanical based solutions.</p>
       </div>
       <div class="col-md-4 singleIcon">
         <a href="http://metaderm.com" target="_blank">
-          <div class="squareLogo">
+          <div class="outersquare">
+          <div class="squareLogo" id="squareLogo">
             <div class="md-M">
               <h3>M</h3></div>
           </div>
+            </div>
+          <div id="metadermDescription">
           <h3>Metaderm</h3></a>
-        <p>Our products, including MetaDerm, contain natural ingredients and were developed utilizing rigorous scientific standards to help alleviate chronic skin conditions including eczema, psoriasis and extremely dry skin.</p>
+        <p>Our products, including MetaDerm, contain natural ingredients and were developed utilizing rigorous scientific standards to help alleviate chronic skin conditions including eczema, psoriasis and extremely dry skin. To learn more visit <a href="http://metaderm.com">Metaderm.com</a></p>
+          </div>
       </div>
     </div>
   </div>
   <div class="footer">
     <div class="address">
-      <p>Haus Bioceuticals
-        <br> 755 Research Parkway, Suite 460
-        <br> Oklahoma City, OK 73104
-        <br> P. 888-240-7095
-        <br>
+      <address><h4>Haus Bioceuticals</h4>
+755 Research Parkway,
+Suite 460<br>
+Oklahoma City, OK 73104
+</address>
+      P. <a href="tel:18882407095">1-888-240-7095 </a> &nbsp;&nbsp;F. 405.239.5390<br>
+email: <a href="mailto:info@hausbio.com">info@hausbio.com</a>
+        <br><br>
       </p>
-    </div>
     <h6> Icons made with <a href="http://logomakr.com" title="Logo Maker">Logo Maker</a></h6>
+    </div>
+
   </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="./scripts/app.js"></script>
 
 </body>
 

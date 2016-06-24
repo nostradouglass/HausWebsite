@@ -36,7 +36,7 @@ gulp.task('html', function () {
 //Scripts Task
 //Uglifies JS and saves to new file
 gulp.task('scripts', function () {
-  gulp.src('js/*.js')
+  gulp.src('scripts/*.js')
     .pipe(plumber())
     .pipe(uglify())
     .pipe(gulp.dest('./dist/scripts/'))
@@ -83,7 +83,7 @@ gulp.task('image', function () {
 //Watches html, JS, sass for changes and runs on save
 gulp.task('watch', function () {
   gulp.watch('*.html', ['html']);
-  gulp.watch('js/*.js', ['scripts']);
+  gulp.watch('scripts/*.js', ['scripts']);
   gulp.watch('sass/**/*.scss', ['styles']);
 
 });
