@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-    var browser = navigator.appName;
-    var code = navigator.appCodeName;
-
-
-  if (browser != "Netscape" || code !== "Mozilla") {
-
   $("#science").mouseover(function () {
     $("#science").effect("bounce", {
       times: 3,
@@ -27,7 +21,5 @@ $(document).ready(function () {
     }, 1000);
   });
 
-
-};
 
   });

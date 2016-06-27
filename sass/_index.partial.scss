@@ -127,8 +127,13 @@ $bgGrey: #D6D0D0;
 
 .singleIcon {
   padding: 40px;
+
+  div {
+    margin: 0 auto!important
+  }
+
   img {
-    margin: auto;
+    margin: 0 auto;
     display: block;
   }
   h3 {
